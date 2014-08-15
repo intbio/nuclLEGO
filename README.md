@@ -9,3 +9,4 @@ The goal of the project is to create 3D printed models of nucleosomes that can b
 Contents
 --------
 dimer_version - version of nucleosome model that have separatly printed DNA and 4 histone dimers.
+
