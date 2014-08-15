@@ -1,4 +1,4 @@
-3D printed model of nucleosome core particle consisting from DNA and 4 histone dimers
+3D printed model of nucleosome core particle consisting of DNA and 4 histone dimers
 ========
 
 Contents
@@ -14,4 +14,8 @@ Technical details
 The model STL files can be created by running the get_stl.tcl script using VMD (http://www.ks.uiuc.edu/Research/vmd/)
 vmd -e get_stl.tcl
 The initial files were scaled by a factor of 44.4 using Blender (http://www.blender.org).
+
+
+Video
+------
 
