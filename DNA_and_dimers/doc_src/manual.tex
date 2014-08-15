@@ -1,6 +1,6 @@
 
 \documentclass[12pt,onecolumn]{scrartcl}
-%\usepackage[margin=1.0in]{geometry}
+\usepackage[margin=0.9in]{geometry}
 %\usepackage{mhchem} % Package for chemical equation typesetting
 %\usepackage{siunitx} % Provides the \SI{}{} command for typesetting SI units
 %\usepackage[T2A]{fontenc}
@@ -8,16 +8,17 @@
 %\usepackage[english,russian]{babel}
 %\usepackage{indentfirst}
 %\usepackage{enumerate}
-%\usepackage{subfig}
-%\usepackage{graphicx} % Required for the inclusion of images
+\usepackage{subfig}
+\usepackage{graphicx} % Required for the inclusion of images
 
 %\usepackage{morefloats}
 
 %\usepackage{wrapfig}
 %\usepackage{lscape}
 %\usepackage{rotating}
-%\usepackage{hyperref}
-
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,urlcolor=blue}
+\urlstyle{same}
 
 
 %\setlength\parindent{30pt} % Removes all indentation from paragraphs
@@ -31,10 +32,10 @@
 %----------------------------------------------------------------------------------------
 
 \title{Nucleosome LEGO} % Title
-\subtitle{Model variant 1: DNA and histone dimers}
-\url{https://github.com/molsim/nuclLEGO}
+\subtitle{\url{https://github.com/molsim/nuclLEGO} \\ Model variant 1: DNA and histone dimers }
 
-\author{by \\ Alexey Shaytan \\ \texttt{alexey.shaytan@gmail.com}} % Author name
+
+\author{by \\ Alexey Shaytan \footnote{alexey.shaytan at gmail.com}} % Author name
 
 \date{} % Date for the report
 
@@ -44,13 +45,42 @@
 
 
 % If you wish to include an abstract, uncomment the lines below
-\begin{abstract}
-\end{abstract}
+%\begin{abstract}
+
+%\end{abstract}
 %----------------------------------------------------------------------------------------
 %	BODY
 %----------------------------------------------------------------------------------------
 
-This version of nucleosome model.
+\section{Model description}
+The model is based on X-ray structure of nucleosome core particle from \textit{Xenopus laevis} histones and $\alpha$-satellite DNA sequence (PDB ID: 1KX5, Davey et al. 2002). Flexible histone tails we truncate and only following parts of histone sequence were retained in the model: H3 (45-end), H4 (24-end), H2A (15-118), H2B (30-end). Suggested color coding is seen in Figure \ref{colorcode}.
+
+\begin{figure}[h]
+\begin{center}
+\subfloat{\includegraphics[width=0.5\textwidth]{img/nucl_ss} }
+\subfloat{\includegraphics[width=0.5\textwidth]{img/nucl_surf}}
+\caption{Suggested color coding of nucleosome parts: first H3-H4 dimer (chains A,B) - blue, second H3-H4 dimer (chains E,F) - green, first H2A-H2B dimer (chains C,D) - yellow, second H2A-H2B dimer (chains G,H) - red, DNA (chains I,J) - white/grey.}
+\label{colorcode}
+\end{center}
+\end{figure}
+
+\section{Assembly instructions}
+See video
+\begin{itemize}
+\item Locate histone dimers and their key binding elements (Figure \ref{dim_elem}). For H3-H4 - 4-helix bundle site of H3 histone with bidentate protrusion of LYS115 and HIS113, 4-helix bundle site of H4 histone with bidentate protrusion of LYS77 and HIS75, H4 TYR98 at C-terminal $\beta$-sheet. For H2A-H2B dimer - H2B 4-helix bundle site and ARG89, H2A docking domain.
+\item Locate DNA. DNA sequence it symmetry except for the central AT base pair. Locate the additional methyl group of central T protruding from the major groove DNA surface. This methyl group pinpoints the 'upper side' of nucleosome.
+\item Attache two H3-H4 dimers (blue and green) to each other via 4-helix bundle interaction.
+\item Take yellow H2A-H2B dimer, insert ARG89 between H4LYS77 and H4HIS75 of blue H3-H4 dimer and attach H2A-H2B dimer by guiding the docking domain into its natural position, pay attention to H4TYR98 of the green dimer which should fit into cavity on the yellow H2A-H2B surface.
+\item Do the same with the red H2A-H2B dimer, check the interaction of two H2A-H2B dimers at the dyad axis with L1 loops.
+\item Locate the 14 arginines at the surface of the octamer, which should be inserted into minor grooves of nucleosomal DNA. See Figure \ref{14argininges}. These arginines are at superhelix locations (SHL) $\pm0.5,\pm1.5,\pm2.5,\pm3.5,\pm4.5,\pm5.5,\pm6.5$
+\item Orient DNA so that thymine of the central base pair is closer to the blue H3-H4 dimer, locate the two symmetric minor grooves of DNA nearest to the DNA central base pair, locate two symmetric H4 arginines that should fit into these minor grooves.
+\item Gently but uniformly push the ends of nucleosomal DNA along the DNA path, so that the DNA superhelix will uniformly deform and its radius will increase to enable the DNA pass through the top of nucleosome into its position on the octamer.
+\item Put the DNA onto the octamer by first allowing the H4 arginines fit into the symmetric minor grooves. At this loin arginines at SHL $\pm1.5,\pm2.5$ should also be in place.
+\item Now we need to get all other key arginines in place to their minor grooves at corresponding SHL. The idea is to pull DNA carefully but sufficiently strong at the corresponding SHL and consecutively put all the key arginines into minor grooves. It is important to apply force to DNA without applying to much pressure to the arginines, since they might break away (especially H2BARG30). In case the arginines break away they can be easily glued back with super glue.
+
+\end{itemize}
+
+\section{Final model pictures}
 
 %----------------------------------------------------------------------------------------
 %	BIBLIOGRAPHY

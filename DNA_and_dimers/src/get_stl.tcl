@@ -22,8 +22,8 @@ source input_param.tcl
 
 ###
 
-
- mol load pdb only_nucl_aligned.pdb
+ mol load psf only_nucl_init.psf
+ mol addfile only_nucl_aligned.pdb
  mol ssrecalc top
 
 set molid [ molinfo top ]
@@ -126,14 +126,24 @@ mol colupdate 4 top 0
 # mol colupdate 7 top 0
 
 
+# color Segname CHA blue3
+# color Segname CHB green
+# color Segname CHC yellow2
+# color Segname CHD red3
+# color Segname CHE blue3
+# color Segname CHF green
+# color Segname CHG yellow2
+# color Segname CHH red3
+
 color Segname CHA blue3
-color Segname CHB green
+color Segname CHB blue3
 color Segname CHC yellow2
-color Segname CHD red3
-color Segname CHE blue3
+color Segname CHD yellow2
+color Segname CHE green
 color Segname CHF green
-color Segname CHG yellow2
+color Segname CHG red3
 color Segname CHH red3
+
 
 color Highlight Nonback 6
 color Highlight Nucback 2
