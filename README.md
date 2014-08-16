@@ -1,7 +1,7 @@
 nuclLEGO
 ========
 
-Nucleosome LEGO project: 3D printed model of nucleosomes as construction sets
+Nucleosome LEGO project: 3D printed models of nucleosomes as construction sets
 --------
 
 The goal of the project is to create 3D printed models of nucleosomes that can be assembled from separately printed parts.
