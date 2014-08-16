@@ -16,6 +16,7 @@ vmd -e get_stl.tcl
 The initial files were scaled by a factor of 44.4 using Blender (http://www.blender.org).
 
 
-Video
+Videos
 ------
+http://youtu.be/BVYtnfIcnH4
 
