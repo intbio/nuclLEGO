@@ -10,3 +10,7 @@ Model variants
 --------
 DNA_and_4_dimers - version of nucleosome model that have separatly printed DNA and 4 histone dimers.
 
+Check videos
+-------
+http://youtu.be/BVYtnfIcnH4
+
