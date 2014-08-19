@@ -9,6 +9,8 @@ The goal of the project is to create 3D printed models of nucleosomes that can b
 Model variants
 --------
 DNA_and_4_dimers - version of nucleosome model that have separatly printed DNA and 4 histone dimers.
+Model desription:
+https://github.com/molsim/nuclLEGO/blob/master/DNA_and_dimers/manual.pdf
 
 Check videos
 -------
