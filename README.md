@@ -10,7 +10,7 @@ Model variants
 --------
 DNA_and_4_dimers - version of nucleosome model that have separatly printed DNA and 4 histone dimers.
 Model desription:
-https://github.com/molsim/nuclLEGO/blob/master/DNA_and_dimers/manual.pdf
+https://github.com/molsim/nuclLEGO/blob/master/DNA_and_dimers/manual.pdf?raw=true
 
 Check videos
 -------
