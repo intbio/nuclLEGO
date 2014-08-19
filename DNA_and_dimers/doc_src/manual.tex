@@ -8,6 +8,7 @@
 %\usepackage[english,russian]{babel}
 %\usepackage{indentfirst}
 %\usepackage{enumerate}
+\usepackage{texshade}
 \usepackage{subfig}
 \usepackage{graphicx} % Required for the inclusion of images
 
@@ -17,8 +18,10 @@
 %\usepackage{lscape}
 %\usepackage{rotating}
 \usepackage{hyperref}
+\usepackage{lscape}
 \hypersetup{colorlinks=true,urlcolor=blue}
 \urlstyle{same}
+
 
 
 %\setlength\parindent{30pt} % Removes all indentation from paragraphs
@@ -35,7 +38,7 @@
 \subtitle{\url{https://github.com/molsim/nuclLEGO} \\ Model variant 1: DNA and histone dimers }
 
 
-\author{by \\ Alexey Shaytan \footnote{alexey.shaytan at gmail.com}} % Author name
+\author{by \\ Alexey Shaytan \footnote{alexey.shaytan at gmail dot com}} % Author name
 
 \date{\small{\today}} % Date for the report
 
@@ -126,7 +129,122 @@ Initial parts in Figure \ref{parts} and assembled model in Figure \ref{nucl}.
 \end{center}
 \end{figure}
 
+\section{Final notes}
+Please, send your comments and suggestions at alexey.shaytan at gmail dot com.
 
+\begin{landscape}
+\section{Appendix A: Histone sequences}
+
+
+\begin{texshade}{seq/h3.fasta}
+
+\residuesperline*{80}
+        
+%\threshold[5]{1}
+\shadeallresidues
+\shadingmode[hydropathy]{functional}
+\showruler{top}{1}
+\ttopspace{-\baselineskip}
+\hideconsensus
+\defconsensus{{}}{*}{upper}
+\hideseq{dum}
+
+\feature{top}{consensus}{85..114}{helix}{alpha2}\feature{top}{consensus}{120..131}{helix}{alpha3}\feature{top}{consensus}{63..77}{helix}{alpha1}\frameblock{consensus}{83..83}{Red[1.5pt]}\frameblock{consensus}{49..49}{Red[1.5pt]}\frameblock{consensus}{63..63}{Red[1.5pt]}\feature{tttop}{consensus}{78..84}{loop}{loopL1}\feature{tttop}{consensus}{115..119}{loop}{loopL2}\feature{top}{consensus}{118..119}{-->}{beta2}\feature{top}{consensus}{83..84}{-->}{beta1}\feature{top}{consensus}{44..57}{helix}{alphaN}\lowerregion{H3}{1..44}\tintblock{H3}{1..44}\feature{bottom}{H3}{1..44}{---}{cleaved}
+
+\featurerule{1mm}
+\end{texshade}
+
+
+
+\begin{texshade}{seq/h4.fasta}
+
+\residuesperline*{80}
+        
+
+\shadeallresidues
+\shadingmode[hydropathy]{functional}
+
+\showruler{top}{1}
+\ttopspace{-\baselineskip}
+\hideconsensus
+
+\defconsensus{{}}{*}{upper}
+\hideseq{dum}
+
+\feature{top}{consensus}{49..76}{helix}{alpha2}\feature{top}{consensus}{82..93}{helix}{alpha3}\feature{top}{consensus}{30..41}{helix}{alpha1}\frameblock{consensus}{45..45}{Red[1.5pt]}\feature{top}{consensus}{24..29}{helix}{alpha1ext}\feature{tttop}{consensus}{42..48}{loop}{loopL1}\feature{tttop}{consensus}{77..82}{loop}{loopL2}\feature{top}{consensus}{96..98}{-->}{beta3}\feature{top}{consensus}{80..81}{-->}{beta2}\feature{top}{consensus}{45..46}{-->}{beta1}\lowerregion{H3}{1..29}\tintblock{H3}{1..29}\feature{bottom}{H3}{1..29}{---}{cleaved}
+
+\featurerule{1mm}
+
+
+\end{texshade}
+
+\shadebox{Red} - acidic (-)
+\shadebox{Blue} - basic (+)
+\shadebox{Yellow} - polar uncharged
+\shadebox{Green} - hydrophobic nonpolar
+
+
+
+\begin{texshade}{seq/h2a.fasta}
+
+\residuesperline*{80}
+        
+%\threshold[5]{1}
+\shadeallresidues
+\shadingmode[hydropathy]{functional}
+
+
+\showruler{top}{1}
+
+\ttopspace{-\baselineskip}
+
+
+\hideconsensus
+
+\defconsensus{{}}{*}{upper}
+\hideseq{dum}
+
+\feature{top}{consensus}{46..73}{helix}{alpha2}\feature{top}{consensus}{79..89}{helix}{alpha3}\feature{top}{consensus}{26..37}{helix}{alpha1}\frameblock{consensus}{42..42}{Red[1.5pt]}\feature{top}{consensus}{90..97}{helix}{alpha3ext}\frameblock{consensus}{77..77}{Red[1.5pt]}\feature{tttop}{consensus}{92..108}{loop}{docking domain}\feature{top}{consensus}{16..22}{helix}{alpha1ext}\feature{tttop}{consensus}{38..45}{loop}{loopL1}\feature{tttop}{consensus}{74..78}{loop}{loopL2}\feature{top}{consensus}{100..102}{-->}{beta3}\feature{top}{consensus}{77..78}{-->}{beta2}\feature{top}{consensus}{42..43}{-->}{beta1}\lowerregion{H3}{1..14}\tintblock{H3}{1..14}\feature{bottom}{H3}{1..14}{---}{cleaved}\lowerregion{H3}{119..128}\tintblock{H3}{119..128}\feature{bottom}{H3}{119..128}{---}{cleaved}
+
+\featurerule{1mm}
+
+
+\end{texshade}
+
+
+\begin{texshade}{seq/h2b.fasta}
+
+\residuesperline*{80}
+
+\shadeallresidues
+\shadingmode[hydropathy]{functional}
+
+\showruler{top}{1}
+
+\ttopspace{-\baselineskip}
+\hideconsensus
+
+\defconsensus{{}}{*}{upper}
+\hideseq{dum}
+
+\feature{top}{consensus}{52..81}{helix}{alpha2}\feature{top}{consensus}{87..99}{helix}{alpha3}\feature{top}{consensus}{34..46}{helix}{alpha1}\feature{top}{consensus}{100..120}{helix}{alphaC}\feature{tttop}{consensus}{47..51}{loop}{loopL1}\feature{tttop}{consensus}{82..86}{loop}{loopL2}\feature{top}{consensus}{85..86}{-->}{beta2}\feature{top}{consensus}{50..51}{-->}{beta1}\frameblock{consensus}{67..67}{Red[1.5pt]}\lowerregion{H3}{1..20}\tintblock{H3}{1..20}\feature{bottom}{H3}{1..20}{---}{cleaved}
+
+\featurerule{1mm}
+
+
+
+\end{texshade}
+
+
+\shadebox{Red} - acidic (-)
+\shadebox{Blue} - basic (+)
+\shadebox{Yellow} - polar uncharged
+\shadebox{Green} - hydrophobic nonpolar
+
+
+
+
+\end{landscape}
 %----------------------------------------------------------------------------------------
 %	BIBLIOGRAPHY
 %----------------------------------------------------------------------------------------
