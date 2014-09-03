@@ -56,7 +56,7 @@
 %----------------------------------------------------------------------------------------
 
 \section{Model description}
-The model is based on X-ray structure of nucleosome core particle from \textit{Xenopus laevis} histones and $\alpha$-satellite DNA sequence (PDB ID: 1KX5, Davey et al. 2002). Flexible histone tails we truncate and only following parts of histone sequence were retained in the model: H3 (45-end), H4 (24-end), H2A (15-118), H2B (30-end). Suggested color coding is seen in Figure \ref{colorcode}.
+The model is based on X-ray structure of nucleosome core particle from \textit{Xenopus laevis} histones and $\alpha$-satellite DNA sequence (PDB ID: 1KX5, Davey et al. 2002). Flexible histone tails we truncate and only following parts of histone sequence were retained in the model: H3 (45-end), H4 (24-end), H2A (15-118), H2B (30-end, numbers correspond to pdb indexes) (33-end, if numbered in original wild-type sequence). Suggested color coding is seen in Figure \ref{colorcode}.
 
 \begin{figure}[h]
 \begin{center}
@@ -171,7 +171,7 @@ Please, send your comments and suggestions at alexey.shaytan at gmail dot com.
 \defconsensus{{}}{*}{upper}
 \hideseq{dum}
 
-\feature{top}{consensus}{49..76}{helix}{alpha2}\feature{top}{consensus}{82..93}{helix}{alpha3}\feature{top}{consensus}{30..41}{helix}{alpha1}\frameblock{consensus}{45..45}{Red[1.5pt]}\feature{top}{consensus}{24..29}{helix}{alpha1ext}\feature{tttop}{consensus}{42..48}{loop}{loopL1}\feature{tttop}{consensus}{77..82}{loop}{loopL2}\feature{top}{consensus}{96..98}{-->}{beta3}\feature{top}{consensus}{80..81}{-->}{beta2}\feature{top}{consensus}{45..46}{-->}{beta1}\lowerregion{H3}{1..29}\tintblock{H3}{1..29}\feature{bottom}{H3}{1..29}{---}{cleaved}
+\feature{top}{consensus}{49..76}{helix}{alpha2}\feature{top}{consensus}{82..93}{helix}{alpha3}\feature{top}{consensus}{30..41}{helix}{alpha1}\frameblock{consensus}{45..45}{Red[1.5pt]}\feature{top}{consensus}{24..29}{helix}{alpha1ext}\feature{tttop}{consensus}{42..48}{loop}{loopL1}\feature{tttop}{consensus}{77..82}{loop}{loopL2}\feature{top}{consensus}{96..98}{-->}{beta3}\feature{top}{consensus}{80..81}{-->}{beta2}\feature{top}{consensus}{45..46}{-->}{beta1}\lowerregion{H3}{1..23}\tintblock{H3}{1..23}\feature{bottom}{H3}{1..23}{---}{cleaved}
 
 \featurerule{1mm}
 
@@ -183,11 +183,12 @@ Please, send your comments and suggestions at alexey.shaytan at gmail dot com.
 \shadebox{Yellow} - polar uncharged
 \shadebox{Green} - hydrophobic nonpolar
 
+Arginines penetrating into minor grooves highlighted with red boxes.
 
 
 \begin{texshade}{seq/h2a.fasta}
 
-\residuesperline*{80}
+\residuesperline*{78}
         
 %\threshold[5]{1}
 \shadeallresidues
@@ -204,7 +205,7 @@ Please, send your comments and suggestions at alexey.shaytan at gmail dot com.
 \defconsensus{{}}{*}{upper}
 \hideseq{dum}
 
-\feature{top}{consensus}{46..73}{helix}{alpha2}\feature{top}{consensus}{79..89}{helix}{alpha3}\feature{top}{consensus}{26..37}{helix}{alpha1}\frameblock{consensus}{42..42}{Red[1.5pt]}\feature{top}{consensus}{90..97}{helix}{alpha3ext}\frameblock{consensus}{77..77}{Red[1.5pt]}\feature{tttop}{consensus}{92..108}{loop}{docking domain}\feature{top}{consensus}{16..22}{helix}{alpha1ext}\feature{tttop}{consensus}{38..45}{loop}{loopL1}\feature{tttop}{consensus}{74..78}{loop}{loopL2}\feature{top}{consensus}{100..102}{-->}{beta3}\feature{top}{consensus}{77..78}{-->}{beta2}\feature{top}{consensus}{42..43}{-->}{beta1}\lowerregion{H3}{1..14}\tintblock{H3}{1..14}\feature{bottom}{H3}{1..14}{---}{cleaved}\lowerregion{H3}{119..128}\tintblock{H3}{119..128}\feature{bottom}{H3}{119..128}{---}{cleaved}
+\feature{top}{consensus}{46..73}{helix}{alpha2}\feature{top}{consensus}{79..89}{helix}{alpha3}\feature{top}{consensus}{26..37}{helix}{alpha1}\frameblock{consensus}{42..42}{Red[1.5pt]}\feature{top}{consensus}{90..97}{helix}{alpha3ext}\frameblock{consensus}{77..77}{Red[1.5pt]}\feature{tttop}{consensus}{92..108}{loop}{docking domain}\feature{top}{consensus}{16..22}{helix}{alpha1ext}\feature{tttop}{consensus}{38..45}{loop}{loopL1}\feature{tttop}{consensus}{74..78}{loop}{loopL2}\feature{top}{consensus}{100..102}{-->}{beta3}\feature{top}{consensus}{77..78}{-->}{beta2}\feature{top}{consensus}{42..43}{-->}{beta1}\lowerregion{H3}{1..14}\tintblock{H3}{1..14}\feature{bottom}{H3}{1..14}{---}{cleaved}\lowerregion{H3}{119..128}\tintblock{H3}{119..128}\feature{bottom}{H3}{119..128}{---}{cleaved}\feature{tttop}{consensus}{109..117}{loop}{docking tail}
 
 \featurerule{1mm}
 
@@ -227,7 +228,7 @@ Please, send your comments and suggestions at alexey.shaytan at gmail dot com.
 \defconsensus{{}}{*}{upper}
 \hideseq{dum}
 
-\feature{top}{consensus}{52..81}{helix}{alpha2}\feature{top}{consensus}{87..99}{helix}{alpha3}\feature{top}{consensus}{34..46}{helix}{alpha1}\feature{top}{consensus}{100..120}{helix}{alphaC}\feature{tttop}{consensus}{47..51}{loop}{loopL1}\feature{tttop}{consensus}{82..86}{loop}{loopL2}\feature{top}{consensus}{85..86}{-->}{beta2}\feature{top}{consensus}{50..51}{-->}{beta1}\frameblock{consensus}{30..30}{Red[1.5pt]}\lowerregion{H3}{1..20}\tintblock{H3}{1..20}\feature{bottom}{H3}{1..20}{---}{cleaved}
+\feature{top}{consensus}{52..81}{helix}{alpha2}\feature{top}{consensus}{87..99}{helix}{alpha3}\feature{top}{consensus}{34..46}{helix}{alpha1}\feature{top}{consensus}{100..120}{helix}{alphaC}\feature{tttop}{consensus}{47..51}{loop}{loopL1}\feature{tttop}{consensus}{82..86}{loop}{loopL2}\feature{top}{consensus}{85..86}{-->}{beta2}\feature{top}{consensus}{50..51}{-->}{beta1}\frameblock{consensus}{33..33}{Red[1.5pt]}\lowerregion{H3}{1..32}\tintblock{H3}{1..32}\feature{bottom}{H3}{1..32}{---}{cleaved}
 
 \featurerule{1mm}
 
@@ -241,6 +242,7 @@ Please, send your comments and suggestions at alexey.shaytan at gmail dot com.
 \shadebox{Yellow} - polar uncharged
 \shadebox{Green} - hydrophobic nonpolar
 
+Arginines penetrating into minor grooves highlighted with red boxes.
 
 
 
