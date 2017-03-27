@@ -18,3 +18,6 @@ Check videos
 -------
 http://youtu.be/BVYtnfIcnH4
 
+Photo of a model
+-------
+![NUCL](DNA_and_dimers/doc_src/img/nucl.jpg)
